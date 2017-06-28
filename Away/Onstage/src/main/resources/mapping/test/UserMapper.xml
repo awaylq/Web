@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.plat.dao.UserDao">
-	<resultMap id="BaseResultMap" type="com.plat.pojo.User">
+<mapper namespace="com.plat.dao.test.UserDao">
+	<resultMap id="BaseResultMap" type="com.plat.pojo.test.User">
 		<id column="id" property="id" jdbcType="INTEGER" />
 		<result column="name" property="name" jdbcType="VARCHAR" />
 		<result column="pwd" property="pwd" jdbcType="VARCHAR" />
@@ -21,14 +21,14 @@
 		delete from test
 		where id = #{id,jdbcType=INTEGER}
 	</delete>
-	<insert id="insert" parameterType="com.plat.pojo.User">
+	<insert id="insert" parameterType="com.plat.pojo.test.User">
 		insert into test (id, name, pwd,
 		permission)
 		values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR},
 		#{pwd,jdbcType=VARCHAR},
 		#{permission,jdbcType=CHAR})
 	</insert>
-	<insert id="insertSelective" parameterType="com.plat.pojo.User">
+	<insert id="insertSelective" parameterType="com.plat.pojo.test.User">
 		insert into test
 		<trim prefix="(" suffix=")" suffixOverrides=",">
 			<if test="id != null">
@@ -59,7 +59,7 @@
 			</if>
 		</trim>
 	</insert>
-	<update id="updateByPrimaryKeySelective" parameterType="com.plat.pojo.User">
+	<update id="updateByPrimaryKeySelective" parameterType="com.plat.pojo.test.User">
 		update test
 		<set>
 			<if test="name != null">
@@ -74,7 +74,7 @@
 		</set>
 		where id = #{id,jdbcType=INTEGER}
 	</update>
-	<update id="updateByPrimaryKey" parameterType="com.plat.pojo.User">
+	<update id="updateByPrimaryKey" parameterType="com.plat.pojo.test.User">
 		update test
 		set name = #{name,jdbcType=VARCHAR},
 		pwd = #{pwd,jdbcType=VARCHAR},

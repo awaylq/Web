@@ -1,6 +1,6 @@
-package com.plat.dao;
+package com.plat.dao.test;
 
-import com.plat.pojo.User;
+import com.plat.pojo.test.User;
 
 public interface UserDao {
 	int deleteByPrimaryKey(Integer id);

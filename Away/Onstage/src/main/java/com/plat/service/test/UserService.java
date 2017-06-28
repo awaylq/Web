@@ -1,6 +1,6 @@
-package com.plat.service;
+package com.plat.service.test;
 
-import com.plat.pojo.User;
+import com.plat.pojo.test.User;
 
 public interface UserService {
 	public User getUserById(int id);

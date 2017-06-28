@@ -1,4 +1,4 @@
-package com.plat.pojo;
+package com.plat.pojo.test;
 
 public class User {
 	private Integer id;

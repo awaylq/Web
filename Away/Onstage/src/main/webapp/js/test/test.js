@@ -2,7 +2,7 @@ function test() {
 	
 	$.ajax({
 		type:"POST",
-		url:"test/select",
+		url:"main/select",
 		data:{
             "id" : "1"
         },
