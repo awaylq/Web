@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.plat.dao.user.UserDao">
-	<resultMap id="BaseResultMap" type="com.plat.pojo.user.User">
+<mapper namespace="com.plat.user.dao.UserDao">
+	<resultMap id="BaseResultMap" type="com.plat.user.pojo.User">
 		<id column="id" property="id" jdbcType="BIGINT" />
 		<result column="user_name" property="userName" jdbcType="VARCHAR" />
 		<result column="password" property="password" jdbcType="VARCHAR" />
@@ -17,7 +17,7 @@
 		<result column="u_time" property="uTime" jdbcType="DATE" />
 		<result column="is_delete" property="isDelete" jdbcType="CHAR" />
 	</resultMap>
-	<select id="selectAll" resultType="com.plat.pojo.user.User">
+	<select id="selectAll" resultType="com.plat.user.pojo.User">
 	      select * from user;
 	</select>
 </mapper>

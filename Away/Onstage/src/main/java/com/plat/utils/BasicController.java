@@ -1,9 +1,9 @@
-package com.plat.controller;
+package com.plat.utils;
 
 import javax.annotation.Resource;
 
 import com.google.gson.Gson;
-import com.plat.service.test.UserService;
+import com.plat.user.service.UserService;
 
 public class BasicController {
 

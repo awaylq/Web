@@ -1,8 +1,8 @@
-package com.plat.service;
+package com.plat.utils;
 
 import javax.annotation.Resource;
 
-import com.plat.dao.test.UserDao;
+import com.plat.user.dao.UserDao;
 
 public class BasicService {
 	@Resource
